@@ -1,0 +1,46 @@
+h1 {
+  font-family: "Martian Mono";
+}
+
+.name {
+  color: #cbd5e1;
+  font-family: "Open Sans";
+  font-size: 70px;
+}
+
+.sub_name {
+  color: #9b9b9b;
+  font-family: "Martian Mono";
+  font-size: 27px;
+  margin-top: 40px;
+}
+
+.info {
+  color: #c6d0dd;
+  font-family: "Martian Mono";
+  font-size: 20px;
+}
+
+.telegram {
+  color: #838383;
+  font-family: "Open Sans";
+  font-weight: 700;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.telegram:hover {
+  color: #67738d;
+}
+
+.CV:hover {
+  color: #67738d;
+}
+
+.CV {
+  color: #838383;
+  font-family: "Open Sans";
+  font-weight: 700;
+  font-size: 20px;
+  cursor: pointer;
+}

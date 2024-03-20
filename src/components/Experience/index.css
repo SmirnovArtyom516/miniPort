@@ -1,0 +1,11 @@
+.words {
+  font-family: "Martian Mono";
+}
+
+.exp {
+  font-family: "Martian Mono";
+  color: white;
+  font-size: 40px;
+  position: absolute;
+  left: 130px;
+}
