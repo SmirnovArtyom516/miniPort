@@ -1,7 +1,7 @@
 import * as THREE from "three";
 import { Canvas } from "@react-three/fiber";
 import { ContactShadows, Float, Environment } from "@react-three/drei";
-import { Suspense, useRef, useState } from "react";
+import { Suspense, useRef } from "react";
 import { gsap } from "gsap";
 
 export default function Shapes() {
@@ -30,9 +30,8 @@ export default function Shapes() {
   );
 }
 
-function Geometry({ r, position, geometry, materials }) {
-  const meshRef = useRef();
-  const [visible, setVisible] = useState(true);
+function Geometry({ r, position, geometry, materials }: any) {
+  const meshRef: any = useRef();
 
   const startingMaterial = getRandomMaterial();
 
@@ -40,7 +39,7 @@ function Geometry({ r, position, geometry, materials }) {
     return gsap.utils.random(materials);
   }
 
-  function handleClick(e) {
+  function handleClick(e: any) {
     const mesh = e.object;
 
     gsap.to(mesh.rotation, {
@@ -71,8 +70,8 @@ function Geometry({ r, position, geometry, materials }) {
           onClick={handleClick}
           onPointerOver={handlePointerOver}
           onPointerOut={handlePointerOut}
-          visible={visible}
-          material={startingMaterial}
+          visible={true}
+          material={startingMaterial as any}
         ></mesh>
       </Float>
     </group>

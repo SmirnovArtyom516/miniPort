@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from "react";
+import { useEffect, useRef } from "react";
 import "./index.css";
 import gsap from "gsap";
 import Shapes from "../Shapes/Shapes";

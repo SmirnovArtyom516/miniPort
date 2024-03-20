@@ -1,4 +1,3 @@
-import React from "react";
 import { useGLTF } from "@react-three/drei";
 // import cat from "../../../Cat/scene.gltf";
 

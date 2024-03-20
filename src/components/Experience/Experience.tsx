@@ -1,4 +1,3 @@
-import React from "react";
 import {
   VerticalTimeline,
   VerticalTimelineElement,
@@ -13,7 +12,7 @@ import { experiences } from "../../constants";
 // import { SectionWrapper } from "../hoc";
 // import { textVariant } from "../utils/motion";
 
-const ExperienceCard = ({ experience }) => {
+const ExperienceCard = ({ experience }: any) => {
   return (
     <VerticalTimelineElement
       contentStyle={{
@@ -24,17 +23,19 @@ const ExperienceCard = ({ experience }) => {
       }}
       contentArrowStyle={{ borderRight: "7px solid  #232631" }}
       date={
-        <p
-          style={{
-            padding: "20px",
-            position: "relative",
-            bottom: "40px",
-            whiteSpace: "nowrap",
-          }}
-          className="words"
-        >
-          {experience.date}
-        </p>
+        (
+          <p
+            style={{
+              padding: "20px",
+              position: "relative",
+              bottom: "40px",
+              whiteSpace: "nowrap",
+            }}
+            className="words"
+          >
+            {experience.date}
+          </p>
+        ) as any
       }
       iconStyle={{ background: experience.iconBg }}
       icon={

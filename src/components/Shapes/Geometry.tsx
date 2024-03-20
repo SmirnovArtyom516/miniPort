@@ -2,9 +2,9 @@ import { useRef, useState } from "react";
 import { gsap } from "gsap";
 import { Float } from "@react-three/drei";
 
-export default function Geomerty({ r, position, geometry, materials }) {
-  const meshRef = useRef();
-  const [visible, setVisible] = useState(true);
+export default function Geomerty({ r, position, geometry, materials }: any) {
+  const meshRef: any = useRef();
+  const [visible] = useState(true);
 
   const startingMaterial = getRandomMaterial();
 
@@ -12,7 +12,7 @@ export default function Geomerty({ r, position, geometry, materials }) {
     return gsap.utils.random(materials);
   }
 
-  function handleClick(e) {
+  function handleClick(e: any) {
     const mesh = e.object;
 
     gsap.to(mesh.rotation, {
@@ -44,7 +44,7 @@ export default function Geomerty({ r, position, geometry, materials }) {
           onPointerOver={handlePointerOver}
           onPointerOut={handlePointerOut}
           visible={visible}
-          material={startingMaterial}
+          material={startingMaterial as any}
         ></mesh>
       </Float>
     </group>
